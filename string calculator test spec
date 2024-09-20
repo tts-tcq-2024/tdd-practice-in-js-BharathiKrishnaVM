@@ -32,6 +32,3 @@ Test Case 7: Multiple longer-length separators
     Input: "//[foo][bar]\n1foo2bar3"
     Expected Output: "6"
     Description: Handle multiple separators with any character length.
-    Input: "Mary 123"
-    Expected Output: "M640"
-    Description: Ensure that numbers within names do not affect the Soundex output.
