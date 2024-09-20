@@ -18,10 +18,10 @@ Test Case 4: Ignore numbers greater than 1000
     Expected Output: "2"
     Description: Numbers bigger than 1000 should be ignored.
 
-Test Case 5: Numbers bigger than 1000 should be ignored.
+Test Case 5: Arbitary length separators
     Input: "//[***]\n1***2***3"
     Expected Output: "6"
-    Description: Ensure that an empty input returns an empty Soundex code.
+    Description: Separators can be of any length if surrounded by square brackets.
 
 Test Case 6: Multiple single-length separators
     Input: "//[*][%]\n1*2%3"
