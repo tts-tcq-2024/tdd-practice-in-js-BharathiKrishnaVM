@@ -1,0 +1,37 @@
+Test Case 1: Simple Calculator
+    Input: "1,2"
+    Expected Output: "3"
+    Description: Add the numbers from the given string
+
+Test Case 2: New line separator
+    Input: "1\n2,3"
+    Expected Output: "6"
+    Description: Recognize the new line separator and commas remove those and return the sum of numbers
+
+Test Case 3: Custom separator
+    Input: "//;\n1;2"
+    Expected Output: "3"
+    Description: To change separator, the beginning of the string will contain a separate line that looks like this: “//<separator>\n<numbers>”
+
+Test Case 4: Ignore numbers greater than 1000
+    Input: "1001, 2"
+    Expected Output: "2"
+    Description: Numbers bigger than 1000 should be ignored.
+
+Test Case 5: Numbers bigger than 1000 should be ignored.
+    Input: "//[***]\n1***2***3"
+    Expected Output: "6"
+    Description: Ensure that an empty input returns an empty Soundex code.
+
+Test Case 6: Multiple single-length separators
+    Input: "//[*][%]\n1*2%3"
+    Expected Output: "6"
+    Description: Multiple single-length separators
+
+Test Case 7: Multiple longer-length separators
+    Input: "//[foo][bar]\n1foo2bar3"
+    Expected Output: "6"
+    Description: Handle multiple separators with any character length.
+    Input: "Mary 123"
+    Expected Output: "M640"
+    Description: Ensure that numbers within names do not affect the Soundex output.
