@@ -32,3 +32,24 @@ Test Case 7: Multiple longer-length separators
     Input: "//[foo][bar]\n1foo2bar3"
     Expected Output: "6"
     Description: Handle multiple separators with any character length.
+
+Test Case 8: Negative values
+    Input: "-1,-2,3"
+    Expected Output: "Negative numbers are not allowed"
+    Description: Throw the exception that negative numbers are not allowed
+
+Test Case 9: equal to 1000
+    Input: "1000"
+    Expected Output: "6"
+    Description: Handle multiple separators with any character length.
+
+Test Case 10: empty string
+    Input: ""
+    Expected Output: "0"
+    Description: For empty string it will return 0
+Test case 11: only new line
+    Input: "\n"
+    Expected Output: "0"
+    Description: Will return 0
+
+
