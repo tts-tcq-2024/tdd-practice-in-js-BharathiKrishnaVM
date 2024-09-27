@@ -45,7 +45,7 @@ Test case 9: only new line
 
 Test case 10: invalid input
     Input: "-3,1003"
-    Expected Output: "0"
+    Expected Output: "Negative numbers are not allowed"
     Description: Negative values and greater than 1000 is invalid inputs
 
 
