@@ -30,7 +30,7 @@ Test Case 6: Negative values
 
 Test Case 7: equal to 1000
     Input: "1000"
-    Expected Output: "6"
+    Expected Output: "1000"
     Description: Handle multiple separators with any character length.
 
 Test Case 8: empty string
