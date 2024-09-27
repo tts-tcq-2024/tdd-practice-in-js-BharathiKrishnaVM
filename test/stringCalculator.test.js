@@ -27,6 +27,22 @@ describe('StringCalculator Algorithm', () => {
         it('expectSumWithNewlineDelimiter', () => {
              expect(add("1\n2,3")).to.equal(6);
         });
+
+        it('equal to 1000', () => {
+             expect(add("1000")).to.equal(1000);
+        });
+        
+        it('negative values', () => {
+             expect(add("-1,2,3")).to.equal('Negative numbers are not allowed');
+        });
+
+        it('new line', () => {
+             expect(add("\n")).to.equal(0);
+        });
+
+        it('less than 0 and greater than 1000', () => {
+             expect(add("-3, 1003")).to.equal('Negative numbers are not allowed');
+        });
       
     });
 });

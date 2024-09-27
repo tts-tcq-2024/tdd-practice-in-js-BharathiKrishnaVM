@@ -1,0 +1,53 @@
+Test Case 1: Simple Calculator
+    Input: "1,2"
+    Expected Output: "3"
+    Description: Add the numbers from the given string
+
+Test Case 2: New line separator
+    Input: "1\n2,3"
+    Expected Output: "6"
+    Description: Recognize the new line separator and commas remove those and return the sum of numbers
+
+Test Case 3: Custom separator
+    Input: "//;\n1;2"
+    Expected Output: "3"
+    Description: To change separator, the beginning of the string will contain a separate line that looks like this: “//<separator>\n<numbers>”
+
+Test Case 4: Ignore numbers greater than 1000
+    Input: "1001, 2"
+    Expected Output: "2"
+    Description: Numbers bigger than 1000 should be ignored.
+
+Test Case 5: Arbitary length separators
+    Input: "//[***]\n1***2***3"
+    Expected Output: "6"
+    Description: Separators can be of any length if surrounded by square brackets.
+
+Test Case 6: Negative values
+    Input: "-1,-2,3"
+    Expected Output: "Negative numbers are not allowed"
+    Description: Throw the exception that negative numbers are not allowed
+
+Test Case 7: equal to 1000
+    Input: "1000"
+    Expected Output: "1000"
+    Description: Handle multiple separators with any character length.
+
+Test Case 8: empty string
+    Input: ""
+    Expected Output: "0"
+    Description: For empty string it will return 0
+
+Test case 9: only new line
+    Input: "\n"
+    Expected Output: "0"
+    Description: Will return 0
+
+Test case 10: invalid input
+    Input: "-3,1003"
+    Expected Output: "Negative numbers are not allowed"
+    Description: Negative values and greater than 1000 is invalid inputs
+
+
+
+
